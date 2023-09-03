@@ -1,0 +1,17 @@
+.header-div {
+  background-color: rgba(253, 253, 253, 1);
+  color: rgb(0, 0, 0);
+
+  position: sticky;
+  top: 0;
+}
+
+.flower-logo {
+  max-width: 8rem;
+  max-height: 2.5rem;
+}
+
+.links {
+  text-decoration: none;
+  margin-top: 10px;
+}
