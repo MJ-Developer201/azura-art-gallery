@@ -1,28 +1,30 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import LandingPage from './pages/LandingPage'
-import Navbar from './components/Navbar'
-import './css/style.css'
-import { Container } from '@mui/material'
-import MemberShipPage from './pages/MemberShipPage'
-import Events from './pages/Events'
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Navbar from "./components/Navbar";
+import "./css/style.css";
+import { Container } from "@mui/material";
+import MemberShipPage from "./pages/MemberShipPage";
+import Events from "./pages/Events";
+import BuyTicket from "./components/BuyTicket";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <Router>
-        <div className='containment'>
+        <div className="containment">
           <Navbar />
           <Routes>
-            <Route path='/' element={<LandingPage />} />
-            <Route path='/member' element={<MemberShipPage />} />
-            <Route path='/events' element={<Events />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/member" element={<MemberShipPage />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/buy-ticket" element={<BuyTicket />} />
           </Routes>
         </div>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

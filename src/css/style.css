@@ -1,19 +1,16 @@
 body {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
-
 
 h1 {
   text-align: center;
   font-size: 4.7rem;
 }
 
-.containment {}
-
-
+.containment {
+}
 
 p {
   font-size: 1.2rem;
@@ -44,15 +41,17 @@ p {
   color: rgb(0, 0, 0);
 }
 
-
-
 .background-picture {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.581), rgba(10, 10, 10, 0.21)), url('/galleryphoto2.jpg');
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.581),
+      rgba(10, 10, 10, 0.21)
+    ),
+    url("/galleryphoto2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -66,7 +65,6 @@ p {
 
 .first-break-container {
   margin-block: 100px;
-
 }
 
 .first-break-h3 {
@@ -85,10 +83,10 @@ p {
 
 .second-section-picture {
   margin-top: 5rem;
-
 }
 
-.second-section-div {}
+.second-section-div {
+}
 
 .second-section-image {
   margin-top: 5rem;
@@ -104,7 +102,6 @@ p {
   text-align: center;
 }
 
-
 .third-picture-container {
   display: grid;
   align-items: center;
@@ -118,15 +115,17 @@ p {
   margin-block: 50px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(240, 240, 240, 0.404));
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(240, 240, 240, 0.404)
+    );
     z-index: 1;
-
   }
 }
 
@@ -144,19 +143,18 @@ p {
   transition: background-color 0.5s, color 0.3s;
 }
 
-
 .dialog {
   background-image: linear-gradient((rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)));
 }
 
 .schedule-container {
   display: grid;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 1rem;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
 }
 
@@ -194,11 +192,9 @@ p {
   color: white;
 }
 
-
 .become-a-member-image {
   margin-top: 5rem;
 }
-
 
 .fourth-container {
   display: flex;
@@ -209,16 +205,12 @@ p {
   justify-content: center;
 }
 
-
-.fourth-div {}
-
+.fourth-div {
+}
 
 .footer-container {
   padding-top: 4rem;
-
 }
-
-
 
 .padding-break {
   display: grid;
@@ -230,12 +222,12 @@ p {
 }
 
 .break-image-set {
-
   margin-block: 100px;
 }
 
 .member-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/eri-panci-ABdRtZKWJfE-unsplash.jpg')midnightblue;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/eri-panci-ABdRtZKWJfE-unsplash.jpg") midnightblue;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 93vh;
@@ -243,10 +235,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
-
 
 .dropdown {
   display: none;
@@ -262,27 +251,22 @@ p {
 
 .showcase-text {
   text-align: center;
-
 }
 
-@media(max-width:1900) {}
+@media (max-width: 1900) {
+}
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .schedule-container {
     display: grid;
     grid-template-columns: 1fr;
   }
-
-
 }
 
-@media (max-width :720px) {
+@media (max-width: 720px) {
   .hero-first-p {
     display: none !important;
-
-
   }
-
 
   .dropdown {
     display: block;
@@ -292,20 +276,14 @@ p {
     display: none !important;
   }
 
-
-
   .showcase-text {
     text-align: center;
 
     max-width: 35rem;
   }
-
 }
 
-
-@media (min-width :720px) {
-
-
+@media (min-width: 720px) {
   .heading {
     margin-bottom: 4.5rem;
   }
@@ -314,24 +292,12 @@ p {
     margin-top: 2.6rem;
   }
 
-
-
   .middle-image {
     margin-top: 5.1rem;
   }
-
-
-
 }
 
-
-
-
-
-@media(width >=1910px) {
-
-
-
+@media (width >=1910px) {
   .heading {
     margin-bottom: -3.5rem;
   }
@@ -340,12 +306,9 @@ p {
     margin-top: 1.3rem;
   }
 
-
-
   .middle-image {
     margin-top: 4.8rem;
   }
-
 
   .showcase-text {
     text-align: center;
@@ -376,13 +339,11 @@ p {
     margin-left: 8%;
   }
 
-
   .second-section-picture {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-right: 2%;
   }
-
 
   .second-section-image {
     max-width: 500px;
@@ -392,7 +353,6 @@ p {
 
   .second-section-p {
     word-wrap: break-word;
-
   }
 
   .second-section-div {
@@ -402,7 +362,5 @@ p {
   .second-section-image {
     max-width: 500px;
     margin-left: 35%;
-
   }
-
 }
